@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: jomanuel <jomanuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 20:28:13 by jomanuel          #+#    #+#             */
-/*   Updated: 2025/09/24 21:39:38 by jomanuel         ###   ########.fr       */
+/*   Updated: 2026/03/11 11:11:10 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 int	main(void)
 {
 	int N = 5;
-	Zombie *zombieHorde = Zombie::zombieHorde(N, "NEE");
+	Zombie *horde = zombieHorde(N, "NEE");
 
 	for (int i = 0; i < N; i++)
 	{
-		zombieHorde[i].announce();
+		horde[i].announce();
 	}
 
-	delete[] zombieHorde;
+	delete[] horde;
 }

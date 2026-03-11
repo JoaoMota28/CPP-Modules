@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: jomanuel <jomanuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 16:07:47 by jomanuel          #+#    #+#             */
-/*   Updated: 2025/09/24 20:22:06 by jomanuel         ###   ########.fr       */
+/*   Updated: 2026/03/11 11:01:00 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,16 @@ class Zombie
 {
 	public:
 		Zombie(void);
+		Zombie(std::string name);
 		~Zombie();
 	
 		void	announce(void);
-		static Zombie*	newZombie(std::string name);
-		static void	randomChump(std::string name);
 
 	private:
-		std::string name;
+		std::string _name;
 };
+
+void	randomChump(std::string name);
+Zombie*	newZombie(std::string name);
 
 #endif

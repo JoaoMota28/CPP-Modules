@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: jomanuel <jomanuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 16:07:37 by jomanuel          #+#    #+#             */
-/*   Updated: 2025/09/24 20:23:27 by jomanuel         ###   ########.fr       */
+/*   Updated: 2026/03/11 11:00:56 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int main(void)
 {
-	Zombie	*zombie = Zombie::newZombie("Brainless");
+	Zombie	*zombie = newZombie("Brainless");
 	zombie->announce();
 	
-	Zombie::randomChump("Random");
+	randomChump("Random");
 
 	delete zombie;
 }
