@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   bsp.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: jomanuel <jomanuel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 19:36:32 by jomanuel          #+#    #+#             */
-/*   Updated: 2026/03/04 11:16:49 by jomanuel         ###   ########.fr       */
+/*   Updated: 2026/03/11 15:10:29 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ bool bsp(Point const a, Point const b, Point const c, Point const point)
 	Fixed fc = cross_product(Point(a.getx() - c.getx(), a.gety() - c.gety()), 
 		Point(point.getx() - c.getx(), point.gety() - c.gety()));
 	
-	if (fa >= 0 && fb >= 0 && fc >= 0)
+	if (fa > 0 && fb > 0 && fc > 0)
 		return true;
-	else if (fa <= 0 && fb <= 0 && fc <= 0)
+	else if (fa < 0 && fb < 0 && fc < 0)
 		return true;
 	return false;
 }
