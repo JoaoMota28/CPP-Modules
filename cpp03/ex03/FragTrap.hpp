@@ -6,7 +6,7 @@
 /*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 16:11:32 by jomanuel          #+#    #+#             */
-/*   Updated: 2026/03/10 19:34:59 by jomanuel         ###   ########.fr       */
+/*   Updated: 2026/03/12 15:07:15 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,13 @@ class FragTrap : virtual public ClapTrap
 		FragTrap(const FragTrap& other);
 		FragTrap& operator= (const FragTrap& other);
 		
-		virtual void attack(const std::string& target);
+		void attack(const std::string& target);
 		void highFivesGuys(void);
+	
+	protected:
+		int			F_hit_points;
+		int			F_energy_points;
+		int			F_attack_damage;
 };
 
 #endif

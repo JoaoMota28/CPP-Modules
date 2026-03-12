@@ -6,7 +6,7 @@
 /*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/10 18:55:43 by jomanuel          #+#    #+#             */
-/*   Updated: 2026/03/10 20:07:26 by jomanuel         ###   ########.fr       */
+/*   Updated: 2026/03/12 13:15:00 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ class DiamondTrap : public FragTrap, public ScavTrap
 		
 		virtual void attack(const std::string& target);
 		void whoAmI(void);
-		std::string getName() const;
 	
 	private:
 		std::string _name;

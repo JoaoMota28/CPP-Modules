@@ -6,7 +6,7 @@
 /*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 12:35:37 by jomanuel          #+#    #+#             */
-/*   Updated: 2026/03/10 19:34:54 by jomanuel         ###   ########.fr       */
+/*   Updated: 2026/03/12 15:07:32 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,13 @@ class ScavTrap : virtual public ClapTrap
 		ScavTrap(const ScavTrap& other);
 		ScavTrap& operator= (const ScavTrap& other);
 		
-		virtual void attack(const std::string& target);
+		void attack(const std::string& target);
 		void guardGate();
+
+	protected:
+		int			S_hit_points;
+		int			S_energy_points;
+		int			S_attack_damage;
 };
 
 #endif
