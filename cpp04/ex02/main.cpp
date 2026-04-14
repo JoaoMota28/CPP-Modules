@@ -6,7 +6,7 @@
 /*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 19:50:44 by jomanuel          #+#    #+#             */
-/*   Updated: 2026/02/18 16:33:27 by jomanuel         ###   ########.fr       */
+/*   Updated: 2026/04/14 18:22:29 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,14 +65,22 @@ int main()
 
     Cat cat1;
     cat1.getBrain()->setIdea(0, "I rule the world");
+    cat1.getBrain()->setIdea(1, "Hiii");
 
     Cat cat2;
     cat2 = cat1;
+
+    std::cout << "Cat1 idea: " << cat1.getBrain()->getIdea(0) << std::endl;
+    std::cout << "Cat2 idea: " << cat2.getBrain()->getIdea(0) << std::endl;
+    std::cout << "Cat1 idea: " << cat1.getBrain()->getIdea(1) << std::endl;
+    std::cout << "Cat2 idea: " << cat2.getBrain()->getIdea(1) << std::endl;
 
     cat2.getBrain()->setIdea(0, "I want tuna");
 
     std::cout << "Cat1 idea: " << cat1.getBrain()->getIdea(0) << std::endl;
     std::cout << "Cat2 idea: " << cat2.getBrain()->getIdea(0) << std::endl;
+    std::cout << "Cat1 idea: " << cat1.getBrain()->getIdea(1) << std::endl;
+    std::cout << "Cat2 idea: " << cat2.getBrain()->getIdea(1) << std::endl;
 
     return 0;
 }
